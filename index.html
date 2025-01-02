@@ -9,7 +9,7 @@
   <body>
     <div class="main-container">
       <div class="all-note-container">
-        <button id="new-note-button" class="button">
+        <button id="new-note-button" class="button" onclick="create_new_note()">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
@@ -72,7 +72,8 @@
             viewBox="0 0 24 24"
             stroke-width="1.5"
             stroke="currentColor"
-            class="size-6"
+            class="save-button"
+            onclick="save_note()"
           >
             <path
               stroke-linecap="round"
@@ -88,7 +89,8 @@
             viewBox="0 0 24 24"
             stroke-width="1.5"
             stroke="currentColor"
-            class="size-6"
+            class="delete-button"
+            onclick="delete_note()"
           >
             <path
               stroke-linecap="round"
