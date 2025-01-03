@@ -1,6 +1,42 @@
+const all_notes = [
+  {
+    id: 1,
+    title: "Title A",
+    note_message: "message A",
+    timestamp: "01.03.2025",
+  },
+  {
+    id: 2,
+    title: "Title B",
+    note_message: "message B",
+    timestamp: "09.09.2023",
+  },
+  {
+    id: 3,
+    title: "Title C",
+    note_message: "message C",
+    timestamp: "03.10.2019",
+  },
+  {
+    id: 4,
+    title: "Title D",
+    note_message: "message D",
+    timestamp: "11.09.2020",
+  },
+];
+
+window.addEventListener("load", (event) => {
+  for (let i = 0; i < all_notes.length; i++) {
+    create_note_UI(
+      all_notes[i].title,
+      all_notes[i].note_message,
+      all_notes[i].timestamp
+    );
+  }
+});
+
 function create_new_note() {
   console.log(`new note created`);
-  create_note_UI("this is the title", "note message", "2025.01.03");
 }
 
 function save_note() {
